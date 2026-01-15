@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabiana Hueb Abdala - Psicanálise e Escrita</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background-color: #fefefe;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h100v100H0z" fill="none"/><path d="M50 10 L90 90 L10 90 Z" fill="white" opacity="0.05"/></svg>') repeat;
+            opacity: 0.1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            font-style: italic;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin: 60px 0;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 25px;
+            color: #764ba2;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .about-text {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .services {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .service-intro {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #555;
+        }
+
+        .service-item {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.15);
+        }
+
+        .service-item h3 {
+            color: #764ba2;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        .service-item p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .books {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        .book-item {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .book-item h3 {
+            color: #667eea;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .contact-section h2 {
+            color: white;
+            border-bottom: 3px solid white;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 30px 0;
+            font-size: 1.1em;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .contact-item a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #764ba2;
+            padding: 18px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-top: 60px;
+            border-top: 1px solid #ecf0f1;
+        }
+
+        .google-site-link {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+            background: #f0f4f8;
+            border-radius: 10px;
+            display: none; /* Oculto por padrão - remova esta linha quando tiver o endereço */
+        }
+
+        .google-site-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .google-site-link a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .tagline {
+                font-size: 1em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            .header {
+                padding: 50px 20px 40px;
+            }
+
+            section {
+                margin: 40px 0;
+            }
+
+            .services, .books {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Fabiana Hueb Abdala</h1>
+            <p class="tagline">"Psicanálise e escrita como caminhos de escuta e expressão."</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="google-site-link">
+            <p>🌐 Visite também: <a href="https://sites.google.com/view/fabianahuebabdala" target="_blank">sites.google.com/view/fabianahuebabdala</a></p>
+        </div>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p class="about-text">
+                Sou Fabiana Hueb Abdala, psicóloga formada em 1983 pela Universidade de Uberaba, Minas Gerais. Posteriormente, realizei formação psicanalítica no Departamento de Formação em Psicanálise do Instituto Sedes Sapientiae. Atuo como psicanalista no atendimento de adolescentes e adultos desde 2011.
+            </p>
+            <p class="about-text">
+                A formação continuada me coloca em permanente participação em eventos acadêmicos e culturais. Também desenvolvo a escrita em virtude dos registros necessários da aquisição de escuta ao longo dos anos de formação. Escrevi livros de contos, ensaios e um romance.
+            </p>
+            <p class="about-text">
+                Se você deseja saber mais sobre como trabalho, entre em contato comigo para agendarmos uma conversa.
+            </p>
+        </section>
+
+        <section id="psicanalise">
+            <h2>Psicanálise (online e/ou presencial)</h2>
+            <div class="services">
+                <p class="service-intro">A psicanálise é um espaço de escuta, onde a palavra pode abrir caminhos para compreender o sofrimento psíquico e seus sentidos.</p>
+                
+                <div class="service-item">
+                    <h3>1. Entrevista de escuta e orientação</h3>
+                    <p>Um encontro online de 50 minutos. Indicado para quem vive um impasse emergencial ou precisa tomar uma decisão específica.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>2. Acompanhamento de Processo Breve</h3>
+                    <p>Encontros online, conforme combinado. Indicado para momentos de transição, luto, mudanças profissionais ou reorganizações subjetivas. Permite aprofundar a escuta e acompanhar o desenrolar do processo.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>3. Análise</h3>
+                    <p>Para atravessamentos mais complexos, sem prazo determinado. Trabalho contínuo de elaboração e sustentação do processo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="escrita">
+            <h2>A Escrita como Escuta</h2>
+            <div class="books">
+                <p class="about-text">
+                    Minha trajetória como escritora nasceu do entrelaçamento entre a psicanálise e a literatura. A escuta clínica, desenvolvida ao longo de anos de prática, encontrou na palavra escrita um espaço de elaboração e criação.
+                </p>
+
+                <div class="book-item">
+                    <h3>📖 O Sonho do Jabuti</h3>
+                    <p>Explorei o universo dos contos, onde as narrativas breves permitem capturar instantes de revelação, aqueles momentos em que algo do inconsciente se manifesta de forma surpreendente.</p>
+                </div>
+
+                <div class="book-item">
+                    <h3>📖 Tornar-se Psicanalista em Passos Simples e 90 Anos de Prática</h3>
+                    <p>Representa meu compromisso com a transmissão da psicanálise. Neste livro, de forma divertida, busquei tornar acessível um percurso que é, ao mesmo tempo, rigoroso e profundamente humano, honrando décadas de construção de conhecimento.</p>
+                </div>
+
+                <div class="book-item">
+                    <h3>📖 Algo Aquém das Palavras</h3>
+                    <p>Adentro o território do romance, onde me permito explorar aquilo que resiste à nomeação, aquilo que a linguagem tenta capturar mas que sempre escapa, permanecendo nas entrelinhas, nos silêncios, naquilo que só a ficção consegue tangenciar.</p>
+                </div>
+
+                <p class="about-text" style="margin-top: 30px; text-align: center; font-style: italic;">
+                    Escrever é, para mim, uma extensão da escuta – uma forma de dar voz ao que pulsa além do dizível.
+                </p>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="contact-section">
+                <h2>Contato</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span>📱 WhatsApp:</span>
+                        <a href="https://wa.me/5511992001896" target="_blank">(11) 99200-1896</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>📧 E-mail:</span>
+                        <a href="mailto:fabihueb@gmail.com">fabihueb@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>📸 Instagram:</span>
+                        <a href="https://www.instagram.com/huebfabi" target="_blank">@huebfabi</a>
+                    </div>
+                </div>
+                <a href="https://wa.me/5511992001896?text=Olá%2C%20gostaria%20de%20agendar%20uma%20conversa" class="cta-button" target="_blank">Fale Comigo</a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Fabiana Hueb Abdala - Psicanálise e Escrita</p>
+        <p>Psicóloga CRP 06/18182</p>
+    </footer>
+
+</body>
+</html>
+    
+  </body>
+  
+</html>

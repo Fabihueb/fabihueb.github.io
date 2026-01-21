@@ -1,6 +1,7 @@
 https://codepen.io/fabihueb/pen/raLWxyb.
 <body>
 <header>
+ <img src="fabiana-hueb.jpg" alt="Fabiana Hueb, psicóloga e psicanalista em São Paulo" style="max-width:200px; border-radius:50%; margin-bottom:20px;">
   <h1>Psicóloga e Psicanalista em São Paulo</h1>
 </header>
 

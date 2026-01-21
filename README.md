@@ -6,29 +6,20 @@ https://codepen.io/fabihueb/pen/raLWxyb.
 
 <main>
   <section>
-    <h2>Atendimento clínico presencial e online</h2>
-    <p>
-      Atuo como psicóloga e psicanalista em São Paulo, oferecendo atendimento
-      psicológico fundamentado na psicanálise para pessoas que vivenciam
-      ansiedade, luto e sofrimento emocional.
-    </p>
+    <h2>Atendimento presencial e online</h2>
+    <p>Atuo como psicóloga e psicanalista em São Paulo, realizando atendimento clínico para ansiedade, luto e conflitos emocionais. Ofereço sessões presenciais e online, conforme necessidade.</p>
   </section>
 
   <section>
-    <h2>Psicoterapia com abordagem psicanalítica</h2>
-    <p>
-      A psicoterapia é um espaço de escuta e elaboração, onde o paciente pode
-      compreender seus conflitos e construir novas formas de lidar com suas
-      experiências emocionais.
-    </p>
+    <h2>Sobre meu trabalho</h2>
+    <p>Minha abordagem é fundamentada na escuta psicanalítica, voltada para compreender o sofrimento subjetivo e favorecer a elaboração das experiências de vida.</p>
   </section>
 
   <section>
-    <h2>Agendamento de consulta</h2>
-    <p>
-      Se você busca uma psicóloga e psicanalista em São Paulo,
-      <a href="contato.html">entre em contato</a> para agendar sua sessão.
-    </p>
+    <h2>Agende sua consulta</h2>
+    <p>Se você busca uma psicóloga e psicanalista em São Paulo, <a href="contato.html">clique aqui para entrar em contato</a> e agendar sua sessão.</p>
   </section>
 </main>
+
+
 <body>

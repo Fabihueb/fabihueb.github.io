@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,28 +8,48 @@
         body { font-family: 'Georgia', serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fcfcfc; }
         header { text-align: center; padding: 20px 0; border-bottom: 1px solid #eee; }
         
-        /* Estilo para a sua foto */
+        /* Ajuste da foto para celular e computador */
         .foto-perfil { 
             display: block; 
             margin: 0 auto 20px auto; 
-            width: 180px; 
-            height: auto; 
-            border-radius: 50%; /* Deixa a foto redonda */
+            width: 150px; /* Tamanho fixo para não crescer no celular */
+            height: 150px; 
+            object-fit: cover; /* Garante que não distorça */
+            border-radius: 50%; 
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 3px solid #6a1b9a;
         }
 
-        h1 { font-size: 2.5em; margin-bottom: 10px; color: #6a1b9a; }
+        h1 { font-size: 2em; margin-bottom: 10px; color: #6a1b9a; text-align: center; }
         h2 { color: #6a1b9a; margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
         h3 { color: #4a148c; margin-top: 25px; }
         .content-section { margin-bottom: 40px; }
         
-        .book-item { margin-bottom: 25px; padding: 15px; border-left: 4px solid #6a1b9a; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.03); }
-        .tag-novo { background: #6a1b9a; color: white; padding: 2px 8px; font-size: 0.8em; border-radius: 4px; vertical-align: middle; margin-left: 10px; }
+        .book-item { margin-bottom: 25px; padding: 15px; border-left: 4px solid #6a1b9a; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); }
+        
+        /* Estilo da Tag Lançamento */
+        .tag-novo { 
+            background-color: #6a1b9a; 
+            color: #ffffff !important; 
+            padding: 3px 10px; 
+            font-size: 0.75em; 
+            border-radius: 20px; 
+            margin-left: 10px;
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
         
         .contact-info { background: #f3e5f5; padding: 20px; border-radius: 8px; margin-top: 40px; border: 1px solid #e1bee7; }
         a { color: #6a1b9a; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
         .intro-text { font-style: italic; color: #555; text-align: center; display: block; margin-top: 20px; }
+
+        /* Ajustes para telas pequenas (celular) */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8em; }
+            .foto-perfil { width: 120px; height: 120px; }
+        }
     </style>
 </head>
 <body>
@@ -43,45 +61,29 @@
 </header>
 
 <section class="content-section">
-    <p>Sou Fabiana Hueb Abdala, psicóloga formada em 1983 pela Universidade de Uberaba, Minas Gerais. Em São Paulo realizei formação psicanalítica no Departamento de Formação em Psicanálise do Instituto Sedes Sapientiae. Atuo como psicanalista no atendimento de adolescentes e adultos desde 2011.</p>
-    <p>A formação continuada me coloca em participação permanente em eventos acadêmicos e culturais. Também desenvolvo a escrita em virtude dos registros necessários à aquisição de escuta ao longo dos anos de formação. Escrevi livros de contos, ensaios e um romance.</p>
-    <p>Se você deseja saber mais sobre <strong>como trabalho</strong>, entre em contato comigo para agendarmos uma conversa.</p>
-</section>
-
-<section class="content-section">
-    <h2>Psicanálise (online e/ou presencial)</h2>
-    <p>A psicanálise é um espaço de escuta, onde a palavra pode abrir caminhos para compreender o sofrimento psíquico e seus sentidos.</p>
-    
-    <h3>1. Entrevista de escuta e orientação</h3>
-    <p>Um encontro online de 50 minutos. Indicado para quem vive um impasse emergencial ou precisa tomar uma decisão específica.</p>
-    
-    <h3>2. Acompanhamento de Processo Breve</h3>
-    <p>Encontros online, conforme combinado. Indicado para momentos de transição, luto, mudanças profissionais ou reorganizações subjetivas. Permite aprofundar a escuta e acompanhar o desenrolar do processo.</p>
-    
-    <h3>3. Análise</h3>
-    <p>Para atravessamentos mais complexos, sem prazo determinado. Trabalho contínuo de elaboração e sustentação do processo.</p>
+    <p>Sou Fabiana Hueb Abdala, psicóloga formada em 1983 pela Universidade de Uberaba, Minas Gerais. Atuo como psicanalista no atendimento de adolescentes e adultos desde 2011.</p>
+    <p>A escrita nasceu do entrelaçamento entre a psicanálise e a literatura. Escrevi livros de contos, ensaios e um romance.</p>
 </section>
 
 <section class="content-section">
     <h2>A Escrita como Escuta</h2>
-    <p>Minha trajetória como escritora nasceu do entrelaçamento entre a psicanálise e a literatura. A escuta clínica, desenvolvida ao longo de anos de prática, encontrou na palavra escrita um espaço de elaboração e criação.</p>
-
+    
     <div class="book-item">
         <strong>📖 Algo Aquém das Palavras</strong> <span class="tag-novo">Lançamento</span>
-        <p>Adentro do território do romance, onde me permito explorar aquilo que resiste à nomeação, aquilo que a linguagem tenta capturar mas que sempre escapa, permanecendo nas entrelinhas, nos silêncios, naquilo que só a ficção consegue tangenciar.</p>
+        <p>Adentro do território do romance, onde me permito explorar aquilo que resiste à nomeação, aquilo que a linguagem tenta capturar mas que sempre escapa.</p>
     </div>
 
     <div class="book-item">
         <strong>📖 Sonho do Jabuti</strong>
-        <p>Explorei o universo dos contos, onde as narrativas breves permitem capturar instantes de revelação, aqueles momentos em que algo do inconsciente se manifesta de forma surpreendente.</p>
+        <p>Explorei o universo dos contos, onde as narrativas breves permitem capturar instantes de revelação.</p>
     </div>
 
     <div class="book-item">
         <strong>📖 Tornar-se Psicanalista em Passos Simples e 90 Anos de Prática</strong>
-        <p>Representa meu compromisso com a transmissão da psicanálise. Neste livro, de forma divertida, busquei tornar acessível um percurso que é, ao mesmo tempo, rigoroso e profundamente humano, honrando décadas de construção de conhecimento.</p>
+        <p>Livro que busca tornar acessível um percurso rigoroso e profundamente humano.</p>
     </div>
 
-    <p class="intro-text">"Escrever é, para mim, uma extensão da escuta – uma forma de dar voz ao que pulsa além do dizível."</p>
+    <p class="intro-text">"Escrever é uma forma de dar voz ao que pulsa além do dizível."</p>
 </section>
 
 <section class="contact-info">

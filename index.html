@@ -8,12 +8,11 @@
         body { font-family: 'Georgia', serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fcfcfc; }
         header { text-align: center; padding: 20px 0; border-bottom: 1px solid #eee; }
         
-        /* Ajuste da foto para não ficar gigante no celular */
         .foto-perfil { 
             display: block; 
             margin: 0 auto 20px auto; 
-            width: 180px; /* Tamanho controlado */
-            max-width: 50%; /* No celular ela ocupa metade da largura da tela */
+            width: 180px; 
+            max-width: 50%; 
             height: auto; 
             border-radius: 50%; 
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -42,6 +41,26 @@
         .contact-info { background: #f3e5f5; padding: 20px; border-radius: 8px; margin-top: 40px; border: 1px solid #e1bee7; }
         a { color: #6a1b9a; text-decoration: none; font-weight: bold; }
         .intro-text { font-style: italic; color: #555; margin-top: 20px; }
+
+        /* Botão Minimalista do Ensaio */
+        .btn-ensaio {
+            display: inline-block;
+            padding: 15px 30px;
+            border: 2px solid #6a1b9a;
+            color: #6a1b9a;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: 0.3s;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        .btn-ensaio:hover {
+            background-color: #6a1b9a;
+            color: #fff;
+        }
 
         @media (max-width: 600px) {
             h1 { font-size: 1.8em; }
@@ -80,22 +99,13 @@
 <section class="content-section">
     <h2>A Escrita como Escuta</h2>
     <p>Minha trajetória como escritora nasceu do entrelaçamento entre a psicanálise e a literatura. A escuta clínica, desenvolvida ao longo de anos de prática, encontrou na palavra escrita um espaço de elaboração e criação.</p>
-<div style="text-align: center; margin: 40px 0;">
-    <a href="o-sujeito-diante-do-algoritmo.pdf" target="_blank" style="
-        display: inline-block;
-        padding: 15px 30px;
-        border: 1px solid #000;
-        color: #000;
-        text-decoration: none;
-        font-family: serif;
-        font-size: 14px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        transition: 0.3s;
-    ">
-        Ler Ensaio: O Sujeito Diante do Algoritmo
-    </a>
-</div>
+    
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="O sujeito diante do algoritmo.pdf" target="_blank" class="btn-ensaio">
+            Ler Ensaio: O Sujeito Diante do Algoritmo
+        </a>
+    </div>
+
     <div class="book-item">
         <strong>📖 Algo Aquém das Palavras</strong> <span class="tag-novo">Lançamento</span>
         <p>Adentro do território do romance, onde me permito explorar aquilo que resiste à nomeação, aquilo que a linguagem tenta capturar mas que sempre escapa, permanecendo nas entrelinhas, nos silêncios, naquilo que só a ficção consegue tangenciar.</p>

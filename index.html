@@ -5,25 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabiana Hueb Abdala - Psicanálise e Escrita</title>
     <style>
-        body { font-family: 'Georgia', serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fcfcfc; }
+        body { 
+            font-family: 'Georgia', serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #fcfcfc; 
+        }
+        
         header { text-align: center; padding: 20px 0; border-bottom: 1px solid #eee; }
         
         .foto-perfil { 
             display: block; 
             margin: 0 auto 20px auto; 
             width: 180px; 
-            max-width: 50%; 
-            height: auto; 
+            height: 180px;
+            object-fit: cover;
             border-radius: 50%; 
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             border: 2px solid #6a1b9a;
         }
 
-        h1 { font-size: 2.2em; margin-bottom: 10px; color: #6a1b9a; }
-        h2 { color: #6a1b9a; margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        h3 { color: #4a148c; margin-top: 25px; }
-        .content-section { margin-bottom: 40px; }
+        h1 { font-size: 2.2em; margin-bottom: 5px; color: #6a1b9a; }
+        .subtitulo { margin: 0; font-weight: bold; color: #333; }
+        .localizacao { color: #666; font-size: 0.9em; margin-top: 5px; font-style: italic; }
+
+        h2 { color: #6a1b9a; margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 10px; font-size: 1.5em; }
+        h3 { color: #4a148c; margin-top: 25px; font-size: 1.2em; }
         
+        .content-section { margin-bottom: 40px; }
         .book-item { margin-bottom: 25px; padding: 15px; border-left: 4px solid #6a1b9a; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); }
         
         .tag-novo { 
@@ -32,17 +44,21 @@
             padding: 2px 10px; 
             font-size: 0.7em; 
             border-radius: 4px; 
-            margin-left: 8px;
-            display: inline-block;
-            vertical-align: middle;
             font-weight: bold;
         }
         
         .contact-info { background: #f3e5f5; padding: 20px; border-radius: 8px; margin-top: 40px; border: 1px solid #e1bee7; }
         a { color: #6a1b9a; text-decoration: none; font-weight: bold; }
-        .intro-text { font-style: italic; color: #555; margin-top: 20px; }
-
-        /* Botão Minimalista do Ensaio */
+        
+        /* Botão do Ensaio Centralizado */
+        .btn-container { 
+            text-align: center; 
+            margin: 45px 0; 
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
         .btn-ensaio {
             display: inline-block;
             padding: 15px 30px;
@@ -56,15 +72,20 @@
             transition: 0.3s;
             font-weight: bold;
             border-radius: 4px;
-        }
-        .btn-ensaio:hover {
-            background-color: #6a1b9a;
-            color: #fff;
+            text-align: center;
         }
 
+        .btn-ensaio:hover { background-color: #6a1b9a; color: #fff; }
+
         @media (max-width: 600px) {
-            h1 { font-size: 1.8em; }
             body { padding: 15px; }
+            h1 { font-size: 1.6em; }
+            .btn-ensaio { 
+                width: 100%; 
+                box-sizing: border-box;
+                padding: 15px 5px;
+                font-size: 11px;
+            }
         }
     </style>
 </head>
@@ -73,57 +94,54 @@
 <header>
     <img src="fabi-hueb.jpg" alt="Foto de Fabiana Hueb" class="foto-perfil">
     <h1>Fabiana Hueb Abdala</h1>
-    <p><strong>Psicanalista e Escritora</strong></p>
+    <p class="subtitulo">Psicanalista e Escritora</p>
+    <p class="localizacao">São Paulo</p>
 </header>
 
 <section class="content-section">
-    <p>Sou Fabiana Hueb Abdala, psicóloga formada em 1983 pela Universidade de Uberaba, Minas Gerais. Em São Paulo realizei formação psicanalítica no Departamento de Formação em Psicanálise do Instituto Sedes Sapientiae. Atuo como psicanalista no atendimento de adolescentes e adultos desde 2011.</p>
-    <p>A formação continuada me coloca em participação permanente em eventos acadêmicos e culturais. Também desenvolvo a escrita em virtude dos registros necessários à aquisição de escuta ao longo dos anos de formação. Escrevi livros de contos, ensaios e um romance.</p>
-    <p>Se você deseja saber mais sobre <strong>como trabalho</strong>, entre em contato comigo para agendarmos uma conversa.</p>
+    <p>Sou Fabiana Hueb Abdala, psicóloga formada em 1983 pela Universidade de Uberaba, Minas Gerais. Realizei formação psicanalítica no Instituto Sedes Sapientiae (SP). Atuo no atendimento de adolescentes e adultos desde 2011.</p>
+    <p>A escrita e a prática clínica entrelaçam-se na minha trajetória, resultando em livros de contos, ensaios e romance.</p>
+    <p>Se deseja saber mais sobre <strong>como trabalho</strong>, entre em contato para agendarmos uma conversa.</p>
 </section>
 
 <section class="content-section">
-    <h2>Psicanálise (online e/ou presencial)</h2>
-    <p>A psicanálise é um espaço de escuta, onde a palavra pode abrir caminhos para compreender o sofrimento psíquico e seus sentidos.</p>
+    <h2>Psicanálise (Online e Presencial)</h2>
+    <p>Um espaço de escuta ética para compreender o sofrimento psíquico e seus sentidos.</p>
     
     <h3>1. Entrevista de escuta e orientação</h3>
-    <p>Um encontro online de 50 minutos. Indicado para quem vive um impasse emergencial ou precisa tomar uma decisão específica.</p>
+    <p>Encontro único de 50 minutos para impasses emergenciais.</p>
     
-    <h3>2. Acompanhamento de Processo Breve</h3>
-    <p>Encontros online, conforme combinado. Indicado para momentos de transição, luto, mudanças profissionais ou reorganizações subjetivas. Permite aprofundar a escuta e acompanhar o desenrolar do processo.</p>
+    <h3>2. Processo Breve</h3>
+    <p>Indicado para momentos de transição, luto ou mudanças profissionais.</p>
     
     <h3>3. Análise</h3>
-    <p>Para atravessamentos mais complexos, sem prazo determinado. Trabalho contínuo de elaboração e sustentação do processo.</p>
+    <p>Trabalho contínuo de elaboração e sustentação do processo subjetivo.</p>
 </section>
 
 <section class="content-section">
     <h2>A Escrita como Escuta</h2>
-    <p>Minha trajetória como escritora nasceu do entrelaçamento entre a psicanálise e a literatura. A escuta clínica, desenvolvida ao longo de anos de prática, encontrou na palavra escrita um espaço de elaboração e criação.</p>
+    <p>A escuta clínica encontrou na palavra escrita um espaço de elaboração e criação.</p>
     
-   <div class="btn-container">
-    <a href="ensaio.pdf" target="_blank" class="btn-ensaio">
-        Ler Ensaio: O Sujeito Diante do Algoritmo
-    </a>
-</div>
+    <div class="btn-container">
+        <a href="ensaio.pdf" target="_blank" class="btn-ensaio">
+            Ler Ensaio: O Sujeito Diante do Algoritmo
         </a>
     </div>
 
     <div class="book-item">
         <strong>📖 Algo Aquém das Palavras</strong> <span class="tag-novo">Lançamento</span>
-        <p>Adentro do território do romance, onde me permito explorar aquilo que resiste à nomeação, aquilo que a linguagem tenta capturar mas que sempre escapa, permanecendo nas entrelinhas, nos silêncios, naquilo que só a ficção consegue tangenciar.</p>
+        <p>Um romance que explora o que resiste à nomeação e habita nos silêncios.</p>
     </div>
 
     <div class="book-item">
         <strong>📖 Sonho do Jabuti</strong>
-        <p>Explorei o universo dos contos, onde as narrativas breves permitem capturar instantes de revelação, aqueles momentos em que algo do inconsciente se manifesta de forma surpreendente.</p>
+        <p>Contos que capturam instantes em que o inconsciente se manifesta.</p>
     </div>
 
     <div class="book-item">
-        <strong>📖 Tornar-se Psicanalista em Passos Simples e 90 Anos de Prática</strong>
-        <p>Representa meu compromisso com a transmissão da psicanálise. Neste livro, de forma divertida, busquei tornar acessível um percurso que é, ao mesmo tempo, rigoroso e profundamente humano, honrando décadas de construção de conhecimento.</p>
+        <strong>📖 Tornar-se Psicanalista</strong>
+        <p>Um percurso rigoroso e humano sobre a transmissão da psicanálise.</p>
     </div>
-
-    <p class="intro-text">Escrever é, para mim, uma extensão da escuta – uma forma de dar voz ao que pulsa além do dizível.</p>
 </section>
 
 <section class="contact-info">

@@ -5,70 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Fabiana Hueb Abdala | Psicanálise e Escrita</title>
-    <meta name="description" content="Espaço dedicado à psicanálise e à escrita por Fabiana Hueb Abdala. Ensaios, reflexões sobre a clínica e o processo criativo.">
-    <meta name="keywords" content="Fabiana Hueb Abdala, Psicanálise, Escrita, Clínica, Inconsciente, Ensaios, Psicanalista">
+    <meta name="description" content="Espaço dedicado à psicanálise e à escrita por Fabiana Hueb Abdala. Ensaios e reflexões sobre a clínica e o processo criativo.">
     <meta name="author" content="Fabiana Hueb Abdala">
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Fabiana Hueb Abdala | Psicanálise e Escrita">
-    <meta property="og:description" content="Reflexões sobre o inconsciente e o ato de escrever.">
-    <meta property="og:image" content="LINK_DA_SUA_FOTO.jpg">
-    <meta property="og:url" content="https://fabianahuebabdala.github.io/">
-
     <style>
+        /* Estilo para o site ficar elegante no PC e no Celular */
         body {
             font-family: 'Georgia', serif;
-            line-height: 1.6;
+            line-height: 1.8;
             color: #333;
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #fdfdfd;
+            padding: 30px 20px;
+            background-color: #fafafa;
         }
         header {
-            border-bottom: 1px solid #eee;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
             text-align: center;
+            margin-bottom: 40px;
+        }
+        /* Estilo da sua foto */
+        .perfil-foto {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%; /* Deixa a foto redonda */
+            object-fit: cover;
+            border: 3px solid #eee;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #2c3e50;
+            font-size: 2.2em;
+            margin: 10px 0;
+            color: #1a1a1a;
         }
-        h2 {
-            font-weight: normal;
+        .subtitulo {
             font-style: italic;
-            color: #7f8c8d;
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
         }
         nav {
-            margin: 20px 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            margin-bottom: 40px;
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #34495e;
-            font-weight: bold;
+            color: #444;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 1px;
         }
-        nav a:hover {
-            text-decoration: underline;
+        section {
+            margin-bottom: 40px;
+        }
+        h3 {
+            color: #2c3e50;
+            border-left: 3px solid #2c3e50;
+            padding-left: 15px;
+            margin-bottom: 20px;
         }
         footer {
-            margin-top: 50px;
-            font-size: 0.9em;
             text-align: center;
-            color: #95a5a6;
+            font-size: 0.8em;
+            color: #999;
+            margin-top: 80px;
+        }
+        /* Ajuste para telas pequenas (celular) */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8em; }
+            .perfil-foto { width: 150px; height: 150px; }
         }
     </style>
 </head>
 <body>
 
     <header>
+        <img src="fabi-hueb.jpg" alt="Fabiana Hueb Abdala" class="perfil-foto">
+        
         <h1>Fabiana Hueb Abdala</h1>
-        <h2>Psicanálise e Escrita</h2>
+        <div class="subtitulo">Psicanálise e Escrita</div>
+        
         <nav>
             <a href="#sobre">Sobre</a>
-            <a href="#ensaios">Ensaios</a>
+            <a href="#escrita">Escrita</a>
             <a href="#contato">Contato</a>
         </nav>
     </header>
@@ -76,17 +98,22 @@
     <main>
         <section id="sobre">
             <h3>Sobre</h3>
-            <p>Boas-vindas. Este espaço é dedicado à articulação entre a clínica psicanalítica e a produção textual. Aqui você encontrará ensaios, notas sobre a prática e reflexões acerca da subjetividade contemporânea.</p>
+            <p>Seja bem-vinda(o). Este espaço é um ponto de encontro entre a escuta clínica e o gesto da escrita. Aqui, busco compartilhar reflexões sobre a psicanálise, o inconsciente e as formas como a palavra ganha corpo no texto.</p>
         </section>
 
-        <section id="ensaios">
-            <h3>Escrita</h3>
-            <p>Em breve, novas publicações e reflexões serão compartilhadas aqui.</p>
+        <section id="escrita">
+            <h3>Escrita e Publicações</h3>
+            <p>Ensaios e produções em construção. Acompanhe as atualizações sobre novos artigos e reflexões sobre a prática analítica.</p>
         </section>
+
+        <section id="contato">
+            <h3>Contato</h3>
+            <p>Para parcerias, diálogos ou informações sobre a clínica, entre em contato através do e-mail ou redes sociais.</p>
+            </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Fabiana Hueb Abdala. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Fabiana Hueb Abdala</p>
     </footer>
 
 </body>

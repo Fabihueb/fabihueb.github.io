@@ -1,155 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabiana Hueb Abdala - Psicanálise e Escrita</title>
+    
+    <title>Fabiana Hueb Abdala | Psicanálise e Escrita</title>
+    <meta name="description" content="Espaço dedicado à psicanálise e à escrita por Fabiana Hueb Abdala. Ensaios, reflexões sobre a clínica e o processo criativo.">
+    <meta name="keywords" content="Fabiana Hueb Abdala, Psicanálise, Escrita, Clínica, Inconsciente, Ensaios, Psicanalista">
+    <meta name="author" content="Fabiana Hueb Abdala">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fabiana Hueb Abdala | Psicanálise e Escrita">
+    <meta property="og:description" content="Reflexões sobre o inconsciente e o ato de escrever.">
+    <meta property="og:image" content="LINK_DA_SUA_FOTO.jpg">
+    <meta property="og:url" content="https://fabianahuebabdala.github.io/">
+
     <style>
-        body { 
-            font-family: 'Georgia', serif; 
-            line-height: 1.6; 
-            color: #333; 
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 20px; 
-            background-color: #fcfcfc; 
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fdfdfd;
         }
-        
-        header { text-align: center; padding: 20px 0; border-bottom: 1px solid #eee; }
-        
-        .foto-perfil { 
-            display: block; 
-            margin: 0 auto 20px auto; 
-            width: 180px; 
-            height: 180px;
-            object-fit: cover;
-            border-radius: 50%; 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border: 2px solid #6a1b9a;
-        }
-
-        h1 { font-size: 2.2em; margin-bottom: 5px; color: #6a1b9a; }
-        .subtitulo { margin: 0; font-weight: bold; color: #333; }
-        .localizacao { color: #666; font-size: 0.9em; margin-top: 5px; font-style: italic; }
-
-        h2 { color: #6a1b9a; margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 10px; font-size: 1.5em; }
-        h3 { color: #4a148c; margin-top: 25px; font-size: 1.2em; }
-        
-        .content-section { margin-bottom: 40px; }
-        .book-item { margin-bottom: 25px; padding: 15px; border-left: 4px solid #6a1b9a; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); }
-        
-        .tag-novo { 
-            background-color: #6a1b9a; 
-            color: #ffffff !important; 
-            padding: 2px 10px; 
-            font-size: 0.7em; 
-            border-radius: 4px; 
-            font-weight: bold;
-        }
-        
-        .contact-info { background: #f3e5f5; padding: 20px; border-radius: 8px; margin-top: 40px; border: 1px solid #e1bee7; }
-        a { color: #6a1b9a; text-decoration: none; font-weight: bold; }
-        
-        /* Botão do Ensaio Centralizado */
-        .btn-container { 
-            text-align: center; 
-            margin: 45px 0; 
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-        
-        .btn-ensaio {
-            display: inline-block;
-            padding: 15px 30px;
-            border: 2px solid #6a1b9a;
-            color: #6a1b9a;
-            text-decoration: none;
-            font-family: sans-serif;
-            font-size: 13px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            transition: 0.3s;
-            font-weight: bold;
-            border-radius: 4px;
+        header {
+            border-bottom: 1px solid #eee;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
             text-align: center;
         }
-
-        .btn-ensaio:hover { background-color: #6a1b9a; color: #fff; }
-
-        @media (max-width: 600px) {
-            body { padding: 15px; }
-            h1 { font-size: 1.6em; }
-            .btn-ensaio { 
-                width: 100%; 
-                box-sizing: border-box;
-                padding: 15px 5px;
-                font-size: 11px;
-            }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        h2 {
+            font-weight: normal;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #34495e;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            text-align: center;
+            color: #95a5a6;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="fabi-hueb.jpg" alt="Foto de Fabiana Hueb" class="foto-perfil">
-    <h1>Fabiana Hueb Abdala</h1>
-    <p class="subtitulo">Psicanalista e Escritora</p>
-    <p class="localizacao">São Paulo</p>
-</header>
+    <header>
+        <h1>Fabiana Hueb Abdala</h1>
+        <h2>Psicanálise e Escrita</h2>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#ensaios">Ensaios</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
-<section class="content-section">
-    <p>Sou Fabiana Hueb Abdala, psicóloga formada em 1983 pela Universidade de Uberaba, Minas Gerais. Realizei formação psicanalítica no Instituto Sedes Sapientiae (SP). Atuo no atendimento de adolescentes e adultos desde 2011.</p>
-    <p>A escrita e a prática clínica entrelaçam-se na minha trajetória, resultando em livros de contos, ensaios e romance.</p>
-    <p>Se deseja saber mais sobre <strong>como trabalho</strong>, entre em contato para agendarmos uma conversa.</p>
-</section>
+    <main>
+        <section id="sobre">
+            <h3>Sobre</h3>
+            <p>Boas-vindas. Este espaço é dedicado à articulação entre a clínica psicanalítica e a produção textual. Aqui você encontrará ensaios, notas sobre a prática e reflexões acerca da subjetividade contemporânea.</p>
+        </section>
 
-<section class="content-section">
-    <h2>Psicanálise (Online e Presencial)</h2>
-    <p>Um espaço de escuta ética para compreender o sofrimento psíquico e seus sentidos.</p>
-    
-    <h3>1. Entrevista de escuta e orientação</h3>
-    <p>Encontro único de 50 minutos para impasses emergenciais.</p>
-    
-    <h3>2. Processo Breve</h3>
-    <p>Indicado para momentos de transição, luto ou mudanças profissionais.</p>
-    
-    <h3>3. Análise</h3>
-    <p>Trabalho contínuo de elaboração e sustentação do processo subjetivo.</p>
-</section>
+        <section id="ensaios">
+            <h3>Escrita</h3>
+            <p>Em breve, novas publicações e reflexões serão compartilhadas aqui.</p>
+        </section>
+    </main>
 
-<section class="content-section">
-    <h2>A Escrita como Escuta</h2>
-    <p>A escuta clínica encontrou na palavra escrita um espaço de elaboração e criação.</p>
-    
-    <div class="btn-container">
-        <a href="ensaio.pdf" target="_blank" class="btn-ensaio">
-            Ler Ensaio: O Sujeito Diante do Algoritmo
-        </a>
-    </div>
-
-    <div class="book-item">
-        <strong>📖 Algo Aquém das Palavras</strong> <span class="tag-novo">Lançamento</span>
-        <p>Um romance que explora o que resiste à nomeação e habita nos silêncios.</p>
-    </div>
-
-    <div class="book-item">
-        <strong>📖 Sonho do Jabuti</strong>
-        <p>Contos que capturam instantes em que o inconsciente se manifesta.</p>
-    </div>
-
-    <div class="book-item">
-        <strong>📖 Tornar-se Psicanalista</strong>
-        <p>Um percurso rigoroso e humano sobre a transmissão da psicanálise.</p>
-    </div>
-</section>
-
-<section class="contact-info">
-    <h2>Contato</h2>
-    <p>📱 <strong>WhatsApp:</strong> <a href="https://wa.me/5511992001896" target="_blank">(11) 99200-1896</a></p>
-    <p>📧 <strong>E-mail:</strong> <a href="mailto:fabihueb@gmail.com">fabihueb@gmail.com</a></p>
-    <p>📸 <strong>Instagram:</strong> <a href="https://instagram.com/huebfabi" target="_blank">@huebfabi</a></p>
-</section>
+    <footer>
+        <p>&copy; 2026 Fabiana Hueb Abdala. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
